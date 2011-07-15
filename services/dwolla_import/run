@@ -1,0 +1,9 @@
+#!/bin/sh
+
+APP_DIR=${HOME}/dwolla_download
+
+cd $APP_DIR
+while true; do
+  ./import.rb 2>&1
+  sleep 60
+done
